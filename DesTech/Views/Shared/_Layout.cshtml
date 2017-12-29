@@ -1,44 +1,74 @@
 ﻿<!DOCTYPE html>
-<html>
+
+<!--
+   Template:   Asso - One Page HTML5 Website Template
+   Author:     Themetorium
+   URL:        http://themetorium.net/
+-->
+
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Responsive One Page HTML5 Website Template">
+    <meta name="keywords" content="HTML5, CSS3, Bootsrtrap, Responsive, One Page, Template, Theme, Website" />
+    <meta name="author" content="themetorium.net">
+
+    <!-- Mobile Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     @Styles.Render("~/Content/css")
+    @Styles.Render("~/font-awesome/css")
     @Scripts.Render("~/bundles/modernizr")
 
-</head>
-<body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
-                @Html.Partial("_LoginPartial")
-            </div>
-        </div>
-    </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
-    </div>
+    <!-- Favicon (http://www.favicon-generator.org/) -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
+    <!-- Google font (https://www.google.com/fonts) -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Mono:400,300,500,700' rel='stylesheet' type='text/css'> <!-- Body font -->
+    <link href='http://fonts.googleapis.com/css?family=Black+Ops+One' rel='stylesheet' type='text/css'> <!-- Alternative font -->
+</head>
+
+<!-- Additional information
+============================
+* You are free to use extra helper classes to customize your website (look into "helper.css" file).
+* To use scrolling animations please read more information here: http://mynameismatthieu.com/WOW/index.html.
+-->
+<!-- =================
+///// Begin body /////
+======================
+* Add class="boxed" to use boxed layout (example: <body class="boxed" data-spy="scroll" data-target="#scrollspy">).
+* Use backgroun classes to change boxed layout background color. example: <body class="boxed bg-dark" data-spy="scroll" data-target="#scrollspy"> (look into "helper.css" file for more info).
+-->
+<body data-spy="scroll" data-target="#scrollspy">
+
+    <!-- Begin preloader -->
+    <div id="preloader"><div class="pulse"></div></div>
+    <!-- End preloader -->
+
+    <div id="body-content">@RenderBody()</div>
+
+    <!-- ====================
+    ///// Scripts below /////
+    ===================== -->
+    <!-- Core JS -->
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+
+    <!--==============================
+    ///// Begin Google Analytics /////
+    ============================== -->
+    <!-- Paste your Google Analytics code here.
+    Go to http://www.google.com/analytics/ for more information. -->
+    <!--==============================
+    ///// End Google Analytics /////
+    ============================== -->
 </body>
+<!-- End body -->
+
 </html>
