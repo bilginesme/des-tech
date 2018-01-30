@@ -19,15 +19,17 @@
 
     <!-- Mobile Meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <!-- Google font (https://www.google.com/fonts) -->
     <link href='http://fonts.googleapis.com/css?family=Roboto+Mono:400,300,500,700' rel='stylesheet' type='text/css'> <!-- Body font -->
     <link href='https://fonts.googleapis.com/css?family=Black+Ops+One' rel='stylesheet'> <!-- Alternative font -->
 
 
+
     @Styles.Render("~/Content/css")
-    @Styles.Render("~/font-awesome/css")
     @Scripts.Render("~/bundles/modernizr")
+    @Styles.Render("~/font-awesome/css")
+
 
     <!-- Favicon (http://www.favicon-generator.org/) -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -59,7 +61,6 @@
     ===================== -->
     <!-- Core JS -->
     @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
 
     <!--==============================
