@@ -410,6 +410,19 @@
     <Content Include="Views\Shared\_Layout - OLD.cshtml" />
     <Content Include="Views\Home\_About.cshtml" />
     <Content Include="Views\Home\_Services.cshtml" />
+    <Content Include="Views\Home\_Portfolio.cshtml" />
+    <Content Include="Views\Home\_Prices.cshtml" />
+    <Content Include="Views\Home\_Team.cshtml" />
+    <Content Include="Views\Home\_VideoPromo.cshtml" />
+    <Content Include="Views\Home\_Blog.cshtml" />
+    <Content Include="Views\Home\_Testimonials.cshtml" />
+    <Content Include="Views\Home\_Clients.cshtml" />
+    <Content Include="Views\Home\_Contact.cshtml" />
+    <Content Include="Views\Home\_CallToAction.cshtml" />
+    <Content Include="Views\Home\_Intro.cshtml" />
+    <Content Include="Views\Home\_Header.cshtml" />
+    <Content Include="Views\Home\_TopSlidingBar.cshtml" />
+    <Content Include="Views\Home\_Footer.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

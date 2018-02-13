@@ -633,8 +633,8 @@ $(document).ready(function() {
     type: 'image',
     tLoading: 'Loading image #%curr%...',
     mainClass: 'mfp-fadein',
-    gallery: {
-        enabled: true, // enable or disable gallery (false/true)
+      gallery: {
+          enabled: false, // enable or disable gallery (false/true)
         preload: [0,1], // read about this option in next Lazy-loading section
         navigateByImgClick: true,
         arrowMarkup: '<button title="%title%" type="button" class="mfp-custom-arrow mfp-custom-arrow-%dir%"></button>', // markup of an arrow button
@@ -662,7 +662,7 @@ $(document).ready(function() {
     removalDelay: 300,
     mainClass: 'mfp-fade-zoom',
     gallery: {
-        enabled: true, // enable or disable gallery (false/true)
+        enabled: false, // enable or disable gallery (false/true)
         arrowMarkup: '<button title="%title%" type="button" class="mfp-custom-arrow mfp-custom-arrow-%dir%"></button>', // markup of an arrow button
         tPrev: 'Previous (Left arrow key)', // title for left button
         tNext: 'Next (Right arrow key)' // title for right button
