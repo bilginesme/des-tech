@@ -478,7 +478,7 @@ $(function(){
         autoplayHoverPause: $carousel.data("autoplay-hover-pause"),
         autoplaySpeed: $carousel.data("autoplay-speed"),
         nav: $carousel.data("nav"),
-        navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
+        navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
         navSpeed: $carousel.data("nav-speed"),
         dots: $carousel.data("dots"),
         dotsSpeed: $carousel.data("dots-speed"),

@@ -344,6 +344,7 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\custom.js" />
+    <Content Include="Scripts\fontawesome-all.js" />
     <Content Include="Scripts\imagesloaded.pkgd.min.js" />
     <Content Include="Scripts\isotope.pkgd.min.js" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />

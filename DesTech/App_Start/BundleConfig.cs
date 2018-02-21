@@ -22,7 +22,8 @@ namespace DesTech
                         "~/Scripts/owl.carousel.min.js",
                         "~/Scripts/jquery.validate*",
                         "~/Scripts/custom.js",
-                        "~/Scripts/theme.js"
+                        "~/Scripts/theme.js",
+                        "~/Scripts/fontawesome-all.js"
                         ));
             
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
