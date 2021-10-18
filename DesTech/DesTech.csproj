@@ -189,12 +189,14 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="CaptchaEngine.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="MailEngine.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -206,6 +208,26 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\custom.css" />
+    <Content Include="Content\fontawesome\css\all.css" />
+    <Content Include="Content\fontawesome\css\all.min.css" />
+    <Content Include="Content\fontawesome\css\brands.css" />
+    <Content Include="Content\fontawesome\css\brands.min.css" />
+    <Content Include="Content\fontawesome\css\fontawesome.css" />
+    <Content Include="Content\fontawesome\css\fontawesome.min.css" />
+    <Content Include="Content\fontawesome\css\light.css" />
+    <Content Include="Content\fontawesome\css\light.min.css" />
+    <Content Include="Content\fontawesome\css\regular.css" />
+    <Content Include="Content\fontawesome\css\regular.min.css" />
+    <Content Include="Content\fontawesome\css\solid.css" />
+    <Content Include="Content\fontawesome\css\solid.min.css" />
+    <Content Include="Content\fontawesome\css\svg-with-js.css" />
+    <Content Include="Content\fontawesome\css\svg-with-js.min.css" />
+    <Content Include="Content\fontawesome\css\v4-shims.css" />
+    <Content Include="Content\fontawesome\css\v4-shims.min.css" />
+    <Content Include="Content\fontawesome\webfonts\fa-brands-400.svg" />
+    <Content Include="Content\fontawesome\webfonts\fa-light-300.svg" />
+    <Content Include="Content\fontawesome\webfonts\fa-regular-400.svg" />
+    <Content Include="Content\fontawesome\webfonts\fa-solid-900.svg" />
     <Content Include="Content\helper.css" />
     <Content Include="Content\images\blog\blog-1.jpg" />
     <Content Include="Content\images\blog\blog-2.jpg" />
@@ -228,11 +250,14 @@
     <Content Include="Content\images\clients\new-holland-logo.png" />
     <Content Include="Content\images\clients\opet-logo.png" />
     <Content Include="Content\images\clients\ram-capital-logo.png" />
+    <Content Include="Content\images\desktop-work.png" />
     <Content Include="Content\images\header-shadow.png" />
     <Content Include="Content\images\intro\intro-bg-2.jpg" />
     <Content Include="Content\images\intro\intro-bg-3.jpg" />
     <Content Include="Content\images\intro\intro-bg-4.jpg" />
     <Content Include="Content\images\intro\intro-bg.jpg" />
+    <Content Include="Content\images\intro\intro-bg_.jpg" />
+    <Content Include="Content\images\ladder-and-cloud.png" />
     <Content Include="Content\images\misc\bg-1.jpg" />
     <Content Include="Content\images\misc\bg-2.jpg" />
     <Content Include="Content\images\misc\bg-3.jpg" />
@@ -255,6 +280,7 @@
     <Content Include="Content\images\misc\small\img-7.jpg" />
     <Content Include="Content\images\misc\small\img-8.jpg" />
     <Content Include="Content\images\misc\small\img-9.jpg" />
+    <Content Include="Content\images\office-desk.jpg" />
     <Content Include="Content\images\patterns\info.txt" />
     <Content Include="Content\images\patterns\ptn-1.png" />
     <Content Include="Content\images\patterns\ptn-2.png" />
@@ -266,6 +292,18 @@
     <Content Include="Content\images\plugins\raster.png" />
     <Content Include="Content\images\plugins\raster_dot%402x.png" />
     <Content Include="Content\images\plugins\raster_dot.png" />
+    <Content Include="Content\images\portfolio\big\dummy.jpg" />
+    <Content Include="Content\images\portfolio\big\electron.png" />
+    <Content Include="Content\images\portfolio\big\ford-otosan-1.jpg" />
+    <Content Include="Content\images\portfolio\big\ford-otosan-2.jpg" />
+    <Content Include="Content\images\portfolio\big\ford-otosan-3.jpg" />
+    <Content Include="Content\images\portfolio\big\island-flight.png" />
+    <Content Include="Content\images\portfolio\big\opet-01.jpg" />
+    <Content Include="Content\images\portfolio\big\opet-02.jpg" />
+    <Content Include="Content\images\portfolio\big\opet-03.jpg" />
+    <Content Include="Content\images\portfolio\big\opet-04.jpg" />
+    <Content Include="Content\images\portfolio\big\opet-05.jpg" />
+    <Content Include="Content\images\portfolio\big\phaser.png" />
     <Content Include="Content\images\portfolio\big\portfolio-img-1.jpg" />
     <Content Include="Content\images\portfolio\big\portfolio-img-10.jpg" />
     <Content Include="Content\images\portfolio\big\portfolio-img-2.jpg" />
@@ -276,6 +314,9 @@
     <Content Include="Content\images\portfolio\big\portfolio-img-7.jpg" />
     <Content Include="Content\images\portfolio\big\portfolio-img-8.jpg" />
     <Content Include="Content\images\portfolio\big\portfolio-img-9.jpg" />
+    <Content Include="Content\images\portfolio\big\ramcapital-01.jpg" />
+    <Content Include="Content\images\portfolio\big\sumatra.png" />
+    <Content Include="Content\images\portfolio\masonry\mobile-development.png" />
     <Content Include="Content\images\portfolio\masonry\portfolio-img-1.jpg" />
     <Content Include="Content\images\portfolio\masonry\portfolio-img-10.jpg" />
     <Content Include="Content\images\portfolio\masonry\portfolio-img-2.jpg" />
@@ -312,12 +353,20 @@
     <Content Include="Content\images\portfolio\v.2\portfolio-img-6.jpg" />
     <Content Include="Content\images\portfolio\v.2\portfolio-img-7.jpg" />
     <Content Include="Content\images\portfolio\v.2\portfolio-img-8.jpg" />
+    <Content Include="Content\images\sw-developers-desktop.png" />
+    <Content Include="Content\images\sw-development-lifecycle.png" />
+    <Content Include="Content\images\team\bilgin-esme.jpg" />
+    <Content Include="Content\images\team\bilgin-esme.png" />
+    <Content Include="Content\images\team\ergin-esme-color.jpg" />
+    <Content Include="Content\images\team\ergin-esme.jpg" />
+    <Content Include="Content\images\team\ergin-esme.png" />
     <Content Include="Content\images\team\staff-1.jpg" />
     <Content Include="Content\images\team\staff-2.jpg" />
     <Content Include="Content\images\team\staff-3.jpg" />
     <Content Include="Content\images\team\staff-4.jpg" />
     <Content Include="Content\images\team\staff-5.jpg" />
-    <Content Include="Content\images\testimonial\client-1.png" />
+    <Content Include="Content\images\testimonial\client-1.jpg" />
+    <Content Include="Content\images\testimonial\client-11.png" />
     <Content Include="Content\images\testimonial\client-2.png" />
     <Content Include="Content\images\testimonial\client-3.png" />
     <Content Include="Content\images\video-bg\promo-video-bg-2.jpg" />
@@ -347,6 +396,22 @@
     <Content Include="Scripts\fontawesome-all.js" />
     <Content Include="Scripts\imagesloaded.pkgd.min.js" />
     <Content Include="Scripts\isotope.pkgd.min.js" />
+    <Content Include="Content\fontawesome\webfonts\fa-brands-400.eot" />
+    <Content Include="Content\fontawesome\webfonts\fa-brands-400.ttf" />
+    <Content Include="Content\fontawesome\webfonts\fa-brands-400.woff" />
+    <Content Include="Content\fontawesome\webfonts\fa-brands-400.woff2" />
+    <Content Include="Content\fontawesome\webfonts\fa-light-300.eot" />
+    <Content Include="Content\fontawesome\webfonts\fa-light-300.ttf" />
+    <Content Include="Content\fontawesome\webfonts\fa-light-300.woff" />
+    <Content Include="Content\fontawesome\webfonts\fa-light-300.woff2" />
+    <Content Include="Content\fontawesome\webfonts\fa-regular-400.eot" />
+    <Content Include="Content\fontawesome\webfonts\fa-regular-400.ttf" />
+    <Content Include="Content\fontawesome\webfonts\fa-regular-400.woff" />
+    <Content Include="Content\fontawesome\webfonts\fa-regular-400.woff2" />
+    <Content Include="Content\fontawesome\webfonts\fa-solid-900.eot" />
+    <Content Include="Content\fontawesome\webfonts\fa-solid-900.ttf" />
+    <Content Include="Content\fontawesome\webfonts\fa-solid-900.woff" />
+    <Content Include="Content\fontawesome\webfonts\fa-solid-900.woff2" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -357,11 +422,11 @@
     <Content Include="Scripts\jquery.mb.YTPlayer.js" />
     <Content Include="Scripts\jquery.mb.YTPlayer.min.js" />
     <Content Include="Scripts\jquery.min.js" />
-    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
-    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
@@ -374,7 +439,9 @@
     <Content Include="Scripts\smoothscroll.js" />
     <Content Include="Scripts\theme.js" />
     <Content Include="Scripts\wow.min.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -416,14 +483,19 @@
     <Content Include="Views\Home\_Team.cshtml" />
     <Content Include="Views\Home\_VideoPromo.cshtml" />
     <Content Include="Views\Home\_Blog.cshtml" />
-    <Content Include="Views\Home\_Testimonials.cshtml" />
+    <Content Include="Views\Home\_TeamAlternative.cshtml" />
     <Content Include="Views\Home\_Clients.cshtml" />
     <Content Include="Views\Home\_Contact.cshtml" />
-    <Content Include="Views\Home\_CallToAction.cshtml" />
+    <Content Include="Views\Home\_MissionStatement.cshtml" />
     <Content Include="Views\Home\_Intro.cshtml" />
     <Content Include="Views\Home\_Header.cshtml" />
     <Content Include="Views\Home\_TopSlidingBar.cshtml" />
     <Content Include="Views\Home\_Footer.cshtml" />
+    <Content Include="Views\Home\_OurOffice.cshtml" />
+    <Content Include="Views\Home\_ParGeneralPurposeResultPage.cshtml" />
+    <Content Include="Views\Home\_ParContactFormSave.cshtml" />
+    <Content Include="Views\Home\_ParContactMessagePost.cshtml" />
+    <Content Include="Views\Home\_ParContactMessageWrongCaptcha.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1,0 +1,138 @@
+﻿@{
+    ViewBag.Title = "";
+}
+
+
+<!-- =====================================
+///// Begin section 7 /////
+==========================================
+* Use class "angle-left-top", "angle-right-top", "angle-left-bottom", "angle-right-bottom" to change section angle.
+* Use class "bg-image-fixed" to make background image fixed (otherwise use class "bg-image").
+* Use class "bg-image-parallax" to enable background image parallax effect (otherwise use class "bg-image").
+* Use class "bg-pattern" if you use background patterns (example: http://subtlepatterns.com/). Combine with class "bg-image-fixed".
+-->
+<section id="section-7" class="testimonials-section bg-dark angle-right-top angle-left-bottom bg-image-parallax" style="background-image: url(/Content/images/misc/bg-2.jpg);">
+
+    <!-- Element cover
+    ===================
+    * Use background transparent color classes for colored opacity (example: "bg-transparent-6-dark", "bg-transparent-8-5-red" ... 1 to 95). Look into "helper.css" file for more info.
+    -->
+    <span class="cover bg-transparent-9-5-dark"></span>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+
+                <!-- Begin heading
+                ===================
+                * Use class "heading-center" or "heading-right" to align heading.
+                * Use class "heading-xs", "heading-sm", "heading-md", "heading-lg" or "heading-xlg" to shange heading size.
+                * Use class "heading-hover" to enable heading hover effect.
+                * Use class "heading-uppercase" to enable uppercase letters.
+                -->
+                <div class="heading heading-lg heading-hover text-white wow fadeIn">
+                    <span class="heading-title-ghost">The Team</span>
+                    <h2 class="heading-title">The Team</h2>
+
+                    <!-- Begin divider
+                    ===================
+                    * Use class "hr-width-1", "hr-width-2" -> up to "hr-width-10" to shange divider width.
+                    * Use class "hr-1x", "hr-2x", "hr-3x", "hr-4x" or "hr-5x" to shange divider size.
+                    * Use class "hr-dotted", "hr-dashed" or "hr-double" to shange divider style.
+                    -->
+                    <hr class="hr-width-1 hr-5x border-main">
+                    <!-- End divider -->
+
+                    <p>
+                        DesTech is a small company run by two brothers; Bilgin and Ergin Esme.
+                    </p>
+                </div>
+                <!-- End heading -->
+
+            </div> <!-- /.col -->
+        </div> <!-- /.row -->
+    </div> <!-- /.container -->
+
+    <div class="container">
+        <div class="row wow fadeIn" data-wow-delay="0.3s">
+            <div class="col-md-12 ">
+                <!-- Begin testimonials
+        ========================
+        * Use class "tm-hide-image" to hide testimonial image.
+        * Use class "tm-center" or "tm-right" to align testimonials.
+        -->
+                <div class="testimonial-wrap">
+                    <!-- Begin content carousel (http://www.owlcarousel.owlgraphic.com)
+            ====================================================================
+            * Use class "nav-outside" for outside nav.
+            * Use class "nav-outside-top" for outside top nav.
+            * Use class "nav-rounded" for rounded nav.
+            * Use class "dots-outside" for outside dots.
+            * Use class "dots-left" or "dots-right" to align dots.
+            * Use class "dots-rounded" for rounded dots.
+            * Available carousel data attributes:
+                    data-items="5".......................(items visible on desktop)
+                    data-tablet-landscape="4"............(items visible on mobiles)
+                    data-tablet-portrait="3".............(items visible on mobiles)
+                    data-mobile-landscape="2"............(items visible on tablets)
+                    data-mobile-portrait="1".............(items visible on tablets)
+                    data-loop="true".....................(true/false)
+                    data-margin="10".....................(space between items)
+                    data-center="true"...................(true/false)
+                    data-start-position="0"..............(item start position)
+                    data-animate-in="fadeIn".............(more animations: http://daneden.github.io/animate.css/)
+                    data-animate-out="fadeOut"...........(more animations: http://daneden.github.io/animate.css/)
+                    data-mouse-drag="false"..............(true/false)
+                    data-touch-drag="false"..............(true/false)
+                    data-autoheight="true"...............(true/false)
+                    data-autoplay="true".................(true/false)
+                    data-autoplay-timeout="5000".........(milliseconds)
+                    data-autoplay-hover-pause="true".....(true/false)
+                    data-autoplay-speed="800"............(milliseconds)
+                    data-drag-end-speed="800"............(milliseconds)
+                    data-lazy-load="true"................(true/false)
+                    data-nav="true"......................(true/false)
+                    data-nav-speed="800".................(milliseconds)
+                    data-dots="false"....................(true/false)
+                    data-dots-speed="800"................(milliseconds)
+            -->
+                    <div class="owl-carousel testimonial-carousel dots-outside text-white" data-items="2" data-loop="true">
+                        <div class="testimonial-item text-gray-2" style="margin-right:20px">
+                            <img src="~/Content/images/team/bilgin-esme.png" alt="Bilgin Esme">
+                            <h3>Bilgin Esme</h3>
+                            <p>
+                                Electronics engineer MSc by education. Studies Computer Vision in his Phd thesis. 
+                                Started coding on Commodore 64 when he was 15, and never looked back.  
+                            </p>
+                            <p>
+                                Good at building software architectures, modeling and converting ideas to 
+                                tangible systems and products. Extremely fluent at C#, JavaScript and competent 
+                                at dozens other programming languages.
+                            </p>
+                            <p>
+                                Likes spoken languages, gaming, geography, cycling, coding for fun.
+                            </p>
+                        </div><!-- Bilgin -->
+                        <div class="testimonial-item text-gray-2" style="margin-left:20px;">
+                            <img src="~/Content/images/team/ergin-esme.png" alt="Ergin Esme">
+                            <h3>Ergin Esme</h3>
+                            <p>
+                                Started coding even earlier than his brother. Founded the company when his brother was working
+                                as a research assistant. Together with his brother, they completed over a 100 projects since then.
+                            </p>
+                            <p>
+                                Besides being an expert in databases and query languages, he's a fluent C# coder.
+                            </p>
+                            <p>
+                                Likes cycling, outdoor activities, gardening.
+                            </p>
+                        </div><!-- Ergin -->
+                    </div>
+                    <!-- End testimonials carousel -->
+                </div>
+
+            </div><!-- End testimonials -->
+        </div> <!-- /.row -->
+    </div> <!-- /.container -->
+
+</section>

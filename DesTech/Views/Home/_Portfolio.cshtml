@@ -7,9 +7,7 @@
     <div class="container">
         <div class="row wow fadeIn">
 
-            <!-- Left column -->
             <div class="col-md-6">
-
                 <!-- Begin heading
                 ===================
                 * Use class "heading-center" or "heading-right" to align heading.
@@ -29,20 +27,16 @@
                     -->
                     <hr class="hr-width-1 hr-5x border-main">
                     <!-- End divider -->
-
                 </div>
                 <!-- End heading -->
+            </div><!-- Left column -->
 
-            </div> <!-- /.col -->
-            <!-- Right column -->
             <div class="col-md-6">
-
                 <p class="lead">
-                    <strong>Lorem ipsum dolor</strong> sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. <a href="#">Read More..</a>
+                    <strong>Practice makes perfect.</strong> After years of coding practice, and more than 
+                    a hundred projects, we became especially skillful in some areas.
                 </p>
-
-            </div> <!-- /.col -->
+            </div><!-- Right column -->
 
         </div> <!-- /.row -->
     </div> <!-- /.container -->
@@ -56,11 +50,7 @@
         * Use class "col-1", "col-2", "col-3", "col-4", "col-5" or "col-6" for columns.
         -->
         <div class="isotope popup-gallery gutter-2 col-3">
-
-            <!-- Begin isotope filter
-            =========================== -->
-            <div class="isotope-filter">
-
+            <div class="isotope-filter hidden">
                 <!-- Begin isotope filter toggle button -->
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed filter-toggle-btn" data-toggle="collapse" data-target="#isotope-filter-collapse">
@@ -81,9 +71,8 @@
                     <a href="#" data-filter=".branding, .web-design">Mockups</a>
                 </div>
                 <!-- End isotope filter links -->
+            </div><!-- Isotope filter -->
 
-            </div>
-            <!-- End isotope filter -->
             <!-- Begin isotope items
             ==========================
             * Note: For grid layout make sure that your images are the same dimensions.
@@ -94,75 +83,108 @@
                 <!-- Grid sizer (do not remove!!!) -->
                 <div class="grid-sizer"></div>
 
-
-                <!-- //////////////////
-                // Begin isotope item. Note: use class "width2" for alternative item width (works best on first item)
-                /////////////////////// -->
                 <div class="isotope-item photography wow fadeInUp">
-
-                    <!-- Begin portfolio item -->
                     <div class="portfolio-item-wrap">
                         <div class="portfolio-item">
                             <a class="item-link inline-popup-trigger" href="#portfolio-1">
                                 <span class="cover bg-transparent-9-main"></span>
                                 <img class="item-img" src="~/Content/images/portfolio/masonry/portfolio-img-1.jpg" alt="image">
                                 <div class="item-info text-white">
-                                    <h3 class="item-info-title">Hardcover Book</h3>
-                                    <p class="item-info-text">Photography</p>
+                                    <h3 class="item-info-title">C# Expertise</h3>
+                                    <p class="item-info-text">10+ years of hard work</p>
                                 </div>
                             </a>
                         </div>
-
-                        <!-- Begin inline popup content. Class "mfp-hide" is required to make dialog hidden -->
                         <div id="portfolio-1" class="inline-popup mfp-hide">
                             <div class="inline-popup-inner">
-
-                                <div class="inline-popup-image bg-image" style="background-image: url(/Content/images/portfolio/big/portfolio-img-1.jpg); background-position: 50% 50%;"></div>
+                                <!-- Begin content carousel (http://www.owlcarousel.owlgraphic.com)
+                    ====================================================================
+                    * Use class "nav-outside" for outside nav.
+                    * Use class "nav-outside-top" for outside top nav.
+                    * Use class "nav-rounded" for rounded nav.
+                    * Use class "dots-outside" for outside dots.
+                    * Use class "dots-left" or "dots-right" to align dots.
+                    * Use class "dots-rounded" for rounded dots.
+                    * Available carousel data attributes:
+                            data-items="5".......................(items visible on desktop)
+                            data-tablet-landscape="4"............(items visible on mobiles)
+                            data-tablet-portrait="3".............(items visible on mobiles)
+                            data-mobile-landscape="2"............(items visible on tablets)
+                            data-mobile-portrait="1".............(items visible on tablets)
+                            data-loop="true".....................(true/false)
+                            data-margin="10".....................(space between items)
+                            data-center="true"...................(true/false)
+                            data-start-position="0"..............(item start position)
+                            data-animate-in="fadeIn".............(more animations: http://daneden.github.io/animate.css/)
+                            data-animate-out="fadeOut"...........(more animations: http://daneden.github.io/animate.css/)
+                            data-mouse-drag="false"..............(true/false)
+                            data-touch-drag="false"..............(true/false)
+                            data-autoheight="true"...............(true/false)
+                            data-autoplay="true".................(true/false)
+                            data-autoplay-timeout="5000".........(milliseconds)
+                            data-autoplay-hover-pause="true".....(true/false)
+                            data-autoplay-speed="800"............(milliseconds)
+                            data-drag-end-speed="800"............(milliseconds)
+                            data-lazy-load="true"................(true/false)
+                            data-nav="true"......................(true/false)
+                            data-nav-speed="800".................(milliseconds)
+                            data-dots="false"....................(true/false)
+                            data-dots-speed="800"................(milliseconds)
+                    -->
+                                <div class="owl-carousel portfolio-single-carousel dots-outside" data-items="1" data-nav="true">
+                                    <div class="cc-item">
+                                        <div class="inline-popup-image bg-image" style="background-image: url(/Content/images/portfolio/big/ford-otosan-1.jpg); background-position: 50% 50%;"></div>
+                                    </div>
+                                    <div class="cc-item">
+                                        <div class="inline-popup-image bg-image" style="background-image: url(/Content/images/portfolio/big/ford-otosan-2.jpg); background-position: 50% 50%;"></div>
+                                    </div>
+                                    <div class="cc-item">
+                                        <div class="inline-popup-image bg-image" style="background-image: url(/Content/images/portfolio/big/ford-otosan-3.jpg); background-position: 50% 50%;"></div>
+                                    </div>
+                                </div><!-- Carousel -->
 
                                 <div class="row margin-top-40">
                                     <div class="col-md-8 margin-bottom-20">
-                                        <h2 class="no-margin-top">Portfolio Single Item 1</h2>
-                                        <p>This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of finished, typeset text. Only for show.</p>
-
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquapta. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquipter consequat adipisicing sedari.</p>
+                                        <h2 class="no-margin-top">C# Expertise</h2>
+                                        <p>
+                                            Ford Otosan is automotive manufacturing company, a joint enterprise founded by Ford and Turkish conglomerate “Koc Holding”.
+                                            Ford Otosan manufactures cargo vehicles in factories located in various plants in Turkey. Ford Otosan is also the main global
+                                            production center for the Transit and the Transit Connect models.
+                                        </p>
+                                        <p>
+                                            We completed a software project with the R&D department of Ford Otosan. Project involved interpreting vibration and acoustic
+                                            measurements taken from Ford motors, presenting visually and extracting meaningful data.
+                                        </p>
+                                        <p>
+                                            Vibration and acoustic data is presented via rotatable, zoomable 3-D models. Various transformations like FFT is given by interactive charts.
+                                        </p>
+                                        <p>
+                                            The software is developed in C# by using WPF.
+                                        </p>
                                     </div>
                                     <div class="col-md-4 margin-bottom-20 padding-left-40">
                                         <ul class="list-unstyled">
-                                            <li>Client: <strong><a href="#" target="_blank">MockCo INC</a></strong></li>
-                                            <li>Date: <strong><a href="#" target="_blank">01 jan, 2016</a></strong></li>
-                                            <li>Category <strong><a href="#" target="_blank">Photography</a></strong></li>
-                                            <li>Copyright ©2016, All Rights Reserved</li>
+                                            <li>Client: <strong><a href="#" target="_blank">Ford Otosan</a></strong></li>
+                                            <li>Completed: <strong><a href="#" target="_blank">2017</a></strong></li>
+                                            <li>Category <strong><a href="#" target="_blank">Windows Forms, C# </a></strong></li>
                                         </ul>
-                                        <a href="#" target="_blank" class="btn btn-primary btn-rounded btn-lg margin-top-20">Launch Project</a>
                                     </div>
-                                </div> <!-- /.row -->
-
+                                </div>
                             </div> <!-- /.inline-popup-inner -->
-
                             <a class="inline-popup-close" href="#"><i class="fas fa-times"></i></a>
-
-                        </div>
-                        <!-- End inline popup content -->
-
+                        </div><!-- Popup content. Class "mfp-hide" is required to make dialog hidden -->
                     </div>
-                    <!-- End portfolio item -->
+                </div><!-- C# Expertise (Ford Otosan) - use class "width2" for alternative item width (works best on first item) -->
 
-                </div>
-                <!-- End isotope item -->
-                <!-- //////////////////
-                // Begin isotope item
-                /////////////////////// -->
                 <div class="isotope-item branding wow fadeInUp">
-
-                    <!-- Begin portfolio item -->
                     <div class="portfolio-item-wrap">
                         <div class="portfolio-item">
                             <a class="item-link inline-popup-trigger" href="#portfolio-2">
                                 <span class="cover bg-transparent-9-main"></span>
-                                <img class="item-img" src="~/Content/images/portfolio/masonry/portfolio-img-2.jpg" alt="image">
+                                <img class="item-img" src="~/Content/images/portfolio/masonry/web-development.jpg" alt="image">
                                 <div class="item-info text-white">
-                                    <h3 class="item-info-title">Identity MockUp Vol.1</h3>
-                                    <p class="item-info-text">Branding</p>
+                                    <h3 class="item-info-title">Microsoft .NET MVC</h3>
+                                    <p class="item-info-text">Versatile Way of Creating Web Applications</p>
                                 </div>
                             </a>
                         </div>
@@ -170,53 +192,109 @@
                         <!-- Begin inline popup content. Class "mfp-hide" is required to make dialog hidden -->
                         <div id="portfolio-2" class="inline-popup mfp-hide">
                             <div class="inline-popup-inner">
+                                <!-- Begin content carousel (http://www.owlcarousel.owlgraphic.com)
+                    ====================================================================
+                    * Use class "nav-outside" for outside nav.
+                    * Use class "nav-outside-top" for outside top nav.
+                    * Use class "nav-rounded" for rounded nav.
+                    * Use class "dots-outside" for outside dots.
+                    * Use class "dots-left" or "dots-right" to align dots.
+                    * Use class "dots-rounded" for rounded dots.
+                    * Available carousel data attributes:
+                            data-items="5".......................(items visible on desktop)
+                            data-tablet-landscape="4"............(items visible on mobiles)
+                            data-tablet-portrait="3".............(items visible on mobiles)
+                            data-mobile-landscape="2"............(items visible on tablets)
+                            data-mobile-portrait="1".............(items visible on tablets)
+                            data-loop="true".....................(true/false)
+                            data-margin="10".....................(space between items)
+                            data-center="true"...................(true/false)
+                            data-start-position="0"..............(item start position)
+                            data-animate-in="fadeIn".............(more animations: http://daneden.github.io/animate.css/)
+                            data-animate-out="fadeOut"...........(more animations: http://daneden.github.io/animate.css/)
+                            data-mouse-drag="false"..............(true/false)
+                            data-touch-drag="false"..............(true/false)
+                            data-autoheight="true"...............(true/false)
+                            data-autoplay="true".................(true/false)
+                            data-autoplay-timeout="5000".........(milliseconds)
+                            data-autoplay-hover-pause="true".....(true/false)
+                            data-autoplay-speed="800"............(milliseconds)
+                            data-drag-end-speed="800"............(milliseconds)
+                            data-lazy-load="true"................(true/false)
+                            data-nav="true"......................(true/false)
+                            data-nav-speed="800".................(milliseconds)
+                            data-dots="false"....................(true/false)
+                            data-dots-speed="800"................(milliseconds)
+                    -->
+                                <div class="owl-carousel portfolio-single-carousel dots-outside" data-items="1" data-nav="true">
+                                    <div class="cc-item">
+                                        <div class="inline-popup-image bg-image" style="background-image: url(/Content/images/portfolio/big/opet-01.jpg); background-position: 50% 50%;"></div>
+                                    </div>
+                                    <div class="cc-item">
+                                        <div class="inline-popup-image bg-image" style="background-image: url(/Content/images/portfolio/big/opet-02.jpg); background-position: 50% 50%;"></div>
+                                    </div>
+                                    <div class="cc-item">
+                                        <div class="inline-popup-image bg-image" style="background-image: url(/Content/images/portfolio/big/opet-03.jpg); background-position: 50% 50%;"></div>
+                                    </div>
+                                    <div class="cc-item">
+                                        <div class="inline-popup-image bg-image" style="background-image: url(/Content/images/portfolio/big/opet-04.jpg); background-position: 50% 50%;"></div>
+                                    </div>
+                                    <div class="cc-item">
+                                        <div class="inline-popup-image bg-image" style="background-image: url(/Content/images/portfolio/big/opet-05.jpg); background-position: 50% 50%;"></div>
+                                    </div>
+                                </div><!-- Carousel -->
 
-                                <div class="inline-popup-image bg-image" style="background-image: url(/Content/images/portfolio/big/portfolio-img-2.jpg); background-position: 50% 50%;"></div>
-
-                                <div class="row margin-top-40">
+                                <div class="row margin-top-80">
                                     <div class="col-md-8 margin-bottom-20">
-                                        <h2 class="no-margin-top">Portfolio Single Item 2</h2>
-                                        <p>This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of finished, typeset text. Only for show.</p>
-
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquapta. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquipter consequat adipisicing sedari.</p>
+                                        <h2 class="no-margin-top">Building Web Applications with MVC</h2>
+                                        <p>
+                                            Opet is the leading Turkish petroleum company engaged in the sale of commercial and industrial fuels,
+                                            mineral oils, retail sales, warehousing and international sales.
+                                        </p>
+                                        <p>
+                                            We're working with Opet since 1999 and we implemented many mission-critical applications.
+                                        </p>
+                                        <p>
+                                            Two of the most recent projects are <b>Price Management</b> and <b>Laboratory Automation</b>;
+                                            both are Microsoft MVC based web applications.
+                                        </p>
+                                        <p>
+                                            <b>Price Management</b> application manages all the components for setting the prices of the current petroleum
+                                            products sold in Opet filling stations. Also the pricelist is sent via SMS, Fax, email to the stations automatically.
+                                            Also, the prices are archived for future reference, and there are plenty of reports, maps and statistics fed by
+                                            these data.
+                                        </p>
+                                        <p>
+                                            <b>Laboratory Automation</b> application is being used by the Opet Laboratories that regularly test the quality of the
+                                            products. The data from the lab devices are collected via RS232 cables. The data are sent to the central database by
+                                            web services. The central web application is used to manage the experiments, take official reports and manage related
+                                            activities.
+                                        </p>
                                     </div>
                                     <div class="col-md-4 margin-bottom-20 padding-left-40">
                                         <ul class="list-unstyled">
-                                            <li>Client: <strong><a href="#" target="_blank">MockCo INC</a></strong></li>
-                                            <li>Date: <strong><a href="#" target="_blank">03 jan, 2016</a></strong></li>
-                                            <li>Category <strong><a href="#" target="_blank">Photography</a></strong></li>
-                                            <li>Copyright ©2016, All Rights Reserved</li>
+                                            <li>Client: <strong><a href="#" target="_blank">Opet Petroleum</a></strong></li>
+                                            <li>Date: <strong><a href="#" target="_blank">2016</a></strong></li>
+                                            <li>Category <strong><a href="#" target="_blank">Web Applications</a></strong></li>
                                         </ul>
-                                        <a href="#" target="_blank" class="btn btn-primary btn-rounded btn-lg margin-top-20">Launch Project</a>
                                     </div>
-                                </div> <!-- /.row -->
-
+                                </div>
                             </div> <!-- /.inline-popup-inner -->
 
                             <a class="inline-popup-close" href="#"><i class="fas fa-times"></i></a>
-
-                        </div>
-                        <!-- End inline popup content -->
-
+                        </div><!-- Inline popup content -->
                     </div>
-                    <!-- End portfolio item -->
+                </div><!-- Microsoft .NET MVC (Opet) - use class "width2" for alternative item width (works best on first item) -->
 
-                </div>
-                <!-- End isotope item -->
-                <!-- //////////////////
-                // Begin isotope item
-                /////////////////////// -->
                 <div class="isotope-item web-design wow fadeInUp">
-
-                    <!-- Begin portfolio item -->
                     <div class="portfolio-item-wrap">
                         <div class="portfolio-item">
                             <a class="item-link inline-popup-trigger" href="#portfolio-3">
                                 <span class="cover bg-transparent-9-main"></span>
-                                <img class="item-img" src="~/Content/images/portfolio/masonry/portfolio-img-3.jpg" alt="image">
+                                <img class="item-img" src="~/Content/images/portfolio/masonry/mobile-development.png" alt="image">
                                 <div class="item-info text-white">
-                                    <h3 class="item-info-title">Brown Paper Bag</h3>
-                                    <p class="item-info-text">Web Design</p>
+                                    <h3 class="item-info-title">Mobile Development</h3>
+                                    <p class="item-info-text">Angular & Ionic Frameworks</p>
                                 </div>
                             </a>
                         </div>
@@ -224,62 +302,50 @@
                         <!-- Begin inline popup content. Class "mfp-hide" is required to make dialog hidden -->
                         <div id="portfolio-3" class="inline-popup mfp-hide">
                             <div class="inline-popup-inner">
-
                                 <!-- Begin content carousel (http://www.owlcarousel.owlgraphic.com)
-                                ====================================================================
-                                * Use class "nav-outside" for outside nav.
-                                * Use class "nav-outside-top" for outside top nav.
-                                * Use class "nav-rounded" for rounded nav.
-                                * Use class "dots-outside" for outside dots.
-                                * Use class "dots-left" or "dots-right" to align dots.
-                                * Use class "dots-rounded" for rounded dots.
-                                * Available carousel data attributes:
-                                        data-items="5".......................(items visible on desktop)
-                                        data-tablet-landscape="4"............(items visible on mobiles)
-                                        data-tablet-portrait="3".............(items visible on mobiles)
-                                        data-mobile-landscape="2"............(items visible on tablets)
-                                        data-mobile-portrait="1".............(items visible on tablets)
-                                        data-loop="true".....................(true/false)
-                                        data-margin="10".....................(space between items)
-                                        data-center="true"...................(true/false)
-                                        data-start-position="0"..............(item start position)
-                                        data-animate-in="fadeIn".............(more animations: http://daneden.github.io/animate.css/)
-                                        data-animate-out="fadeOut"...........(more animations: http://daneden.github.io/animate.css/)
-                                        data-mouse-drag="false"..............(true/false)
-                                        data-touch-drag="false"..............(true/false)
-                                        data-autoheight="true"...............(true/false)
-                                        data-autoplay="true".................(true/false)
-                                        data-autoplay-timeout="5000".........(milliseconds)
-                                        data-autoplay-hover-pause="true".....(true/false)
-                                        data-autoplay-speed="800"............(milliseconds)
-                                        data-drag-end-speed="800"............(milliseconds)
-                                        data-lazy-load="true"................(true/false)
-                                        data-nav="true"......................(true/false)
-                                        data-nav-speed="800".................(milliseconds)
-                                        data-dots="false"....................(true/false)
-                                        data-dots-speed="800"................(milliseconds)
-                                -->
+                    ====================================================================
+                    * Use class "nav-outside" for outside nav.
+                    * Use class "nav-outside-top" for outside top nav.
+                    * Use class "nav-rounded" for rounded nav.
+                    * Use class "dots-outside" for outside dots.
+                    * Use class "dots-left" or "dots-right" to align dots.
+                    * Use class "dots-rounded" for rounded dots.
+                    * Available carousel data attributes:
+                            data-items="5".......................(items visible on desktop)
+                            data-tablet-landscape="4"............(items visible on mobiles)
+                            data-tablet-portrait="3".............(items visible on mobiles)
+                            data-mobile-landscape="2"............(items visible on tablets)
+                            data-mobile-portrait="1".............(items visible on tablets)
+                            data-loop="true".....................(true/false)
+                            data-margin="10".....................(space between items)
+                            data-center="true"...................(true/false)
+                            data-start-position="0"..............(item start position)
+                            data-animate-in="fadeIn".............(more animations: http://daneden.github.io/animate.css/)
+                            data-animate-out="fadeOut"...........(more animations: http://daneden.github.io/animate.css/)
+                            data-mouse-drag="false"..............(true/false)
+                            data-touch-drag="false"..............(true/false)
+                            data-autoheight="true"...............(true/false)
+                            data-autoplay="true".................(true/false)
+                            data-autoplay-timeout="5000".........(milliseconds)
+                            data-autoplay-hover-pause="true".....(true/false)
+                            data-autoplay-speed="800"............(milliseconds)
+                            data-drag-end-speed="800"............(milliseconds)
+                            data-lazy-load="true"................(true/false)
+                            data-nav="true"......................(true/false)
+                            data-nav-speed="800".................(milliseconds)
+                            data-dots="false"....................(true/false)
+                            data-dots-speed="800"................(milliseconds)
+                    -->
                                 <div class="owl-carousel portfolio-single-carousel dots-outside" data-items="1" data-nav="true">
-
-                                    <!-- Begin carousel item
-                                    ========================= -->
                                     <div class="cc-item">
-                                        <div class="inline-popup-image bg-image" style="background-image: url(/Content/images/portfolio/big/portfolio-img-3.jpg); background-position: 50% 50%;"></div>
+                                        <div class="inline-popup-image bg-image" style="background-image: url(/Content/images/portfolio/big/ramcapital-01.jpg); background-position: 50% 50%;"></div>
                                     </div>
-                                    <!-- End carousel item -->
-                                    <!-- Begin carousel item
-                                    ========================= -->
                                     <div class="cc-item">
                                         <div class="inline-popup-image bg-image" style="background-image: url(/Content/images/portfolio/big/portfolio-img-4.jpg); background-position: 50% 50%;"></div>
                                     </div>
-                                    <!-- End carousel item -->
-                                    <!-- Begin carousel item
-                                    ========================= -->
                                     <div class="cc-item">
                                         <div class="inline-popup-image bg-image" style="background-image: url(/Content/images/portfolio/big/portfolio-img-5.jpg); background-position: 50% 50%;"></div>
                                     </div>
-                                    <!-- End carousel item -->
-
                                 </div>
                                 <!-- End content carousel -->
 
@@ -299,34 +365,26 @@
                                         </ul>
                                         <a href="#" target="_blank" class="btn btn-primary btn-rounded btn-lg margin-top-20">Launch Project</a>
                                     </div>
-                                </div> <!-- /.row -->
+                                </div>
 
                             </div> <!-- /.inline-popup-inner -->
 
                             <a class="inline-popup-close" href="#"><i class="fas fa-times"></i></a>
-
                         </div>
                         <!-- End inline popup content -->
 
                     </div>
-                    <!-- End portfolio item -->
+                </div><!-- Mobile Development -->
 
-                </div>
-                <!-- End isotope item -->
-                <!-- //////////////////
-                // Begin isotope item
-                /////////////////////// -->
-                <div class="isotope-item graphics wow fadeInUp">
-
-                    <!-- Begin portfolio item -->
+                <div class="isotope-item branding wow fadeInUp">
                     <div class="portfolio-item-wrap">
                         <div class="portfolio-item">
                             <a class="item-link inline-popup-trigger" href="#portfolio-4">
                                 <span class="cover bg-transparent-9-main"></span>
-                                <img class="item-img" src="~/Content/images/portfolio/masonry/portfolio-img-4.jpg" alt="image">
+                                <img class="item-img" src="~/Content/images/portfolio/masonry/game-development-640x800.png" alt="image">
                                 <div class="item-info text-white">
-                                    <h3 class="item-info-title">Canvas Tote Bag</h3>
-                                    <p class="item-info-text">Graphics</p>
+                                    <h3 class="item-info-title">Game Development</h3>
+                                    <p class="item-info-text">Games for your business,<br /> games for fun</p>
                                 </div>
                             </a>
                         </div>
@@ -334,127 +392,181 @@
                         <!-- Begin inline popup content. Class "mfp-hide" is required to make dialog hidden -->
                         <div id="portfolio-4" class="inline-popup mfp-hide">
                             <div class="inline-popup-inner">
+                                <!-- Begin content carousel (http://www.owlcarousel.owlgraphic.com)
+                    ====================================================================
+                    * Use class "nav-outside" for outside nav.
+                    * Use class "nav-outside-top" for outside top nav.
+                    * Use class "nav-rounded" for rounded nav.
+                    * Use class "dots-outside" for outside dots.
+                    * Use class "dots-left" or "dots-right" to align dots.
+                    * Use class "dots-rounded" for rounded dots.
+                    * Available carousel data attributes:
+                            data-items="5".......................(items visible on desktop)
+                            data-tablet-landscape="4"............(items visible on mobiles)
+                            data-tablet-portrait="3".............(items visible on mobiles)
+                            data-mobile-landscape="2"............(items visible on tablets)
+                            data-mobile-portrait="1".............(items visible on tablets)
+                            data-loop="true".....................(true/false)
+                            data-margin="10".....................(space between items)
+                            data-center="true"...................(true/false)
+                            data-start-position="0"..............(item start position)
+                            data-animate-in="fadeIn".............(more animations: http://daneden.github.io/animate.css/)
+                            data-animate-out="fadeOut"...........(more animations: http://daneden.github.io/animate.css/)
+                            data-mouse-drag="false"..............(true/false)
+                            data-touch-drag="false"..............(true/false)
+                            data-autoheight="true"...............(true/false)
+                            data-autoplay="true".................(true/false)
+                            data-autoplay-timeout="5000".........(milliseconds)
+                            data-autoplay-hover-pause="true".....(true/false)
+                            data-autoplay-speed="800"............(milliseconds)
+                            data-drag-end-speed="800"............(milliseconds)
+                            data-lazy-load="true"................(true/false)
+                            data-nav="true"......................(true/false)
+                            data-nav-speed="800".................(milliseconds)
+                            data-dots="false"....................(true/false)
+                            data-dots-speed="800"................(milliseconds)
+                    -->
+                                <div class="owl-carousel portfolio-single-carousel dots-outside" data-items="1" data-nav="true">
+                                    <div class="cc-item">
+                                        <div class="inline-popup-image bg-image" style="background-image: url(/Content/images/portfolio/big/island-flight.png); background-position: 50% 50%;"></div>
+                                    </div>
+                                    <div class="cc-item">
+                                        <div class="inline-popup-image bg-image" style="background-image: url(/Content/images/portfolio/big/sumatra.png); background-position: 50% 50%;"></div>
+                                    </div>
+                                    <div class="cc-item">
+                                        <div class="inline-popup-image bg-image" style="background-image: url(/Content/images/portfolio/big/phaser.png); background-position: 50% 50%;"></div>
+                                    </div>
+                                </div><!-- Carousel -->
 
-                                <div class="inline-popup-image bg-image" style="background-image: url(/Content/images/portfolio/big/portfolio-img-4.jpg); background-position: 50% 50%;"></div>
-
-                                <div class="row margin-top-40">
+                                <div class="row margin-top-80">
                                     <div class="col-md-8 margin-bottom-20">
-                                        <h2 class="no-margin-top">Portfolio Single Item 4</h2>
-                                        <p>This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of finished, typeset text. Only for show.</p>
-
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquapta. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquipter consequat adipisicing sedari.</p>
+                                        <h2 class="no-margin-top">Game Development</h2>
+                                        <p>
+                                            We develop custom games for specific target audiences. If you have ideas for gamification
+                                            for your project, we can help
+                                        </p>
+                                        <p>
+                                            We implement HTML5 based games that can be ported either on iOS or Android platforms. Phaser 2D game
+                                            framework provides lightweight, small footprint games that bring gigantic fun.
+                                        </p>
                                     </div>
                                     <div class="col-md-4 margin-bottom-20 padding-left-40">
-                                        <ul class="list-unstyled">
-                                            <li>Client: <strong><a href="#" target="_blank">MockCo INC</a></strong></li>
-                                            <li>Date: <strong><a href="#" target="_blank">05 jan, 2016</a></strong></li>
-                                            <li>Category <strong><a href="#" target="_blank">Graphics</a></strong></li>
-                                            <li>Copyright ©2016, All Rights Reserved</li>
-                                        </ul>
-                                        <a href="#" target="_blank" class="btn btn-primary btn-rounded btn-lg margin-top-20">Launch Project</a>
+                                        
                                     </div>
-                                </div> <!-- /.row -->
-
+                                </div>
                             </div> <!-- /.inline-popup-inner -->
 
                             <a class="inline-popup-close" href="#"><i class="fas fa-times"></i></a>
-
-                        </div>
-                        <!-- End inline popup content -->
-
+                        </div><!-- Inline popup content -->
                     </div>
-                    <!-- End portfolio item -->
+                </div><!-- Game Development -->
 
-                </div>
-                <!-- End isotope item -->
-                <!-- //////////////////
-                // Begin isotope item
-                /////////////////////// -->
+
                 <div class="isotope-item photography wow fadeInUp">
-
-                    <!-- Begin portfolio item -->
                     <div class="portfolio-item-wrap">
                         <div class="portfolio-item">
                             <a class="item-link inline-popup-trigger" href="#portfolio-5">
                                 <span class="cover bg-transparent-9-main"></span>
                                 <img class="item-img" src="~/Content/images/portfolio/masonry/portfolio-img-5.jpg" alt="image">
                                 <div class="item-info text-white">
-                                    <h3 class="item-info-title">Rubber Stamp</h3>
-                                    <p class="item-info-text">Photography</p>
+                                    <h3 class="item-info-title">Cloud Computing</h3>
+                                    <p class="item-info-text">Web services, Azure expertise</p>
                                 </div>
                             </a>
                         </div>
-
-                        <!-- Begin inline popup content. Class "mfp-hide" is required to make dialog hidden -->
                         <div id="portfolio-5" class="inline-popup mfp-hide">
                             <div class="inline-popup-inner">
-
-                                <!-- Begin embed video (more info about reffering embed videos: https://www.feedthebot.com/pagespeed/defer-videos.htm) -->
-                                <div class="embed-responsive embed-responsive-16by9">
-                                    <iframe data-src="https://www.youtube.com/embed/9UWo5RdXc1o" src="https://player.vimeo.com/video/60616160?"></iframe>
-                                </div>
-                                <!-- End embed video -->
-
+                                <div class="inline-popup-image bg-image" style="background-image: url(/Content/images/portfolio/big/portfolio-img-5.jpg); background-position: 0% 0%; background-size: 100%"></div>
                                 <div class="row margin-top-40">
                                     <div class="col-md-8 margin-bottom-20">
-                                        <h2 class="no-margin-top">Portfolio Single Item 5</h2>
-                                        <p>This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of finished, typeset text. Only for show.</p>
-
+                                        <h2 class="no-margin-top">Universal Windows Platform</h2>
+                                        <p>
+                                            This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the
+                                            look and feel of finished, typeset text. Only for show.
+                                        </p>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquapta. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquipter consequat adipisicing sedari.</p>
                                     </div>
                                     <div class="col-md-4 margin-bottom-20 padding-left-40">
                                         <ul class="list-unstyled">
                                             <li>Client: <strong><a href="#" target="_blank">MockCo INC</a></strong></li>
-                                            <li>Date: <strong><a href="#" target="_blank">07 jan, 2016</a></strong></li>
+                                            <li>Date: <strong><a href="#" target="_blank">03 jan, 2016</a></strong></li>
                                             <li>Category <strong><a href="#" target="_blank">Photography</a></strong></li>
                                             <li>Copyright ©2016, All Rights Reserved</li>
                                         </ul>
                                         <a href="#" target="_blank" class="btn btn-primary btn-rounded btn-lg margin-top-20">Launch Project</a>
                                     </div>
                                 </div> <!-- /.row -->
-
                             </div> <!-- /.inline-popup-inner -->
-
                             <a class="inline-popup-close" href="#"><i class="fas fa-times"></i></a>
-
-                        </div>
-                        <!-- End inline popup content -->
+                        </div><!-- Popup content. Class "mfp-hide" is required to make dialog hidden -->
                     </div>
-                    <!-- End portfolio item -->
+                </div><!-- Cloud - use class "width2" for alternative item width (works best on first item) -->
 
-                </div>
-                <!-- End isotope item -->
-                <!-- //////////////////
-                // Begin isotope item
-                /////////////////////// -->
-                <div class="isotope-item branding wow fadeInUp">
-
-                    <!-- Begin portfolio item -->
+                <div class="isotope-item photography wow fadeInUp">
                     <div class="portfolio-item-wrap">
                         <div class="portfolio-item">
                             <a class="item-link inline-popup-trigger" href="#portfolio-6">
                                 <span class="cover bg-transparent-9-main"></span>
-                                <img class="item-img" src="~/Content/images/portfolio/masonry/portfolio-img-6.jpg" alt="image">
+                                <img class="item-img" src="~/Content/images/portfolio/masonry/cross-platform-alt.png" alt="image">
                                 <div class="item-info text-white">
-                                    <h3 class="item-info-title">Vintage Logo MockUp</h3>
-                                    <p class="item-info-text">Branding</p>
+                                    <h3 class="item-info-title">Cross Platform</h3>
+                                    <p class="item-info-text">Developing Software That Runs on Windows, Mac, Linux and more</p>
                                 </div>
                             </a>
                         </div>
 
-                        <!-- Begin inline popup content. Class "mfp-hide" is required to make dialog hidden -->
                         <div id="portfolio-6" class="inline-popup mfp-hide">
                             <div class="inline-popup-inner">
-
-                                <!-- Begin embed video (more info about reffering embed videos: https://www.feedthebot.com/pagespeed/defer-videos.htm) -->
-                                <div class="embed-responsive embed-responsive-16by9">
-                                    <iframe data-src="https://player.vimeo.com/video/79298633?" src="https://player.vimeo.com/video/60616160?"></iframe>
+                                <!-- Begin content carousel (http://www.owlcarousel.owlgraphic.com)
+                    ====================================================================
+                    * Use class "nav-outside" for outside nav.
+                    * Use class "nav-outside-top" for outside top nav.
+                    * Use class "nav-rounded" for rounded nav.
+                    * Use class "dots-outside" for outside dots.
+                    * Use class "dots-left" or "dots-right" to align dots.
+                    * Use class "dots-rounded" for rounded dots.
+                    * Available carousel data attributes:
+                            data-items="5".......................(items visible on desktop)
+                            data-tablet-landscape="4"............(items visible on mobiles)
+                            data-tablet-portrait="3".............(items visible on mobiles)
+                            data-mobile-landscape="2"............(items visible on tablets)
+                            data-mobile-portrait="1".............(items visible on tablets)
+                            data-loop="true".....................(true/false)
+                            data-margin="10".....................(space between items)
+                            data-center="true"...................(true/false)
+                            data-start-position="0"..............(item start position)
+                            data-animate-in="fadeIn".............(more animations: http://daneden.github.io/animate.css/)
+                            data-animate-out="fadeOut"...........(more animations: http://daneden.github.io/animate.css/)
+                            data-mouse-drag="false"..............(true/false)
+                            data-touch-drag="false"..............(true/false)
+                            data-autoheight="true"...............(true/false)
+                            data-autoplay="true".................(true/false)
+                            data-autoplay-timeout="5000".........(milliseconds)
+                            data-autoplay-hover-pause="true".....(true/false)
+                            data-autoplay-speed="800"............(milliseconds)
+                            data-drag-end-speed="800"............(milliseconds)
+                            data-lazy-load="true"................(true/false)
+                            data-nav="true"......................(true/false)
+                            data-nav-speed="800".................(milliseconds)
+                            data-dots="false"....................(true/false)
+                            data-dots-speed="800"................(milliseconds)
+                    -->
+                                <div class="owl-carousel portfolio-single-carousel dots-outside" data-items="1" data-nav="true">
+                                    <div class="cc-item">
+                                        <div class="inline-popup-image bg-image" style="background-image: url(/Content/images/portfolio/big/ramcapital-01.jpg); background-position: 50% 50%;"></div>
+                                    </div>
+                                    <div class="cc-item">
+                                        <div class="inline-popup-image bg-image" style="background-image: url(/Content/images/portfolio/big/portfolio-img-4.jpg); background-position: 50% 50%;"></div>
+                                    </div>
+                                    <div class="cc-item">
+                                        <div class="inline-popup-image bg-image" style="background-image: url(/Content/images/portfolio/big/portfolio-img-5.jpg); background-position: 50% 50%;"></div>
+                                    </div>
                                 </div>
-                                <!-- End embed video -->
+                                <!-- End content carousel -->
 
-                                <div class="row margin-top-40">
+                                <div class="row margin-top-80">
                                     <div class="col-md-8 margin-bottom-20">
-                                        <h2 class="no-margin-top">Portfolio Single Item 6</h2>
+                                        <h2 class="no-margin-top">Portfolio Single Item 3</h2>
                                         <p>This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of finished, typeset text. Only for show.</p>
 
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquapta. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquipter consequat adipisicing sedari.</p>
@@ -462,250 +574,26 @@
                                     <div class="col-md-4 margin-bottom-20 padding-left-40">
                                         <ul class="list-unstyled">
                                             <li>Client: <strong><a href="#" target="_blank">MockCo INC</a></strong></li>
-                                            <li>Date: <strong><a href="#" target="_blank">08 jan, 2016</a></strong></li>
-                                            <li>Category <strong><a href="#" target="_blank">Branding</a></strong></li>
+                                            <li>Date: <strong><a href="#" target="_blank">04 jan, 2016</a></strong></li>
+                                            <li>Category <strong><a href="#" target="_blank">Photography</a></strong></li>
                                             <li>Copyright ©2016, All Rights Reserved</li>
                                         </ul>
                                         <a href="#" target="_blank" class="btn btn-primary btn-rounded btn-lg margin-top-20">Launch Project</a>
                                     </div>
-                                </div> <!-- /.row -->
-
-                            </div> <!-- /.inline-popup-inner -->
-
-                            <a class="inline-popup-close" href="#"><i class="fas fa-times"></i></a>
-
-                        </div>
-                        <!-- End inline popup content -->
-
-                    </div>
-                    <!-- End portfolio item -->
-
-                </div>
-                <!-- End isotope item -->
-                <!-- //////////////////
-                // Begin isotope item
-                /////////////////////// -->
-                <div class="isotope-item web-design wow fadeInUp">
-
-                    <!-- Begin portfolio item -->
-                    <div class="portfolio-item-wrap">
-                        <div class="portfolio-item">
-                            <a class="item-link inline-popup-trigger" href="#portfolio-7">
-                                <span class="cover bg-transparent-9-main"></span>
-                                <img class="item-img" src="~/Content/images/portfolio/masonry/portfolio-img-7.jpg" alt="image">
-                                <div class="item-info text-white">
-                                    <h3 class="item-info-title">Identity MockUp vol.2</h3>
-                                    <p class="item-info-text">Web Design</p>
                                 </div>
-                            </a>
-                        </div>
-
-                        <!-- Begin inline popup content. Class "mfp-hide" is required to make dialog hidden -->
-                        <div id="portfolio-7" class="inline-popup mfp-hide">
-                            <div class="inline-popup-inner">
-
-                                <div class="inline-popup-image bg-image" style="background-image: url(/Content/images/portfolio/big/portfolio-img-7.jpg); background-position: 50% 50%;"></div>
-
-                                <div class="row margin-top-40">
-                                    <div class="col-md-8 margin-bottom-20">
-                                        <h2 class="no-margin-top">Portfolio Single Item 7</h2>
-                                        <p>This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of finished, typeset text. Only for show.</p>
-
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquapta. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquipter consequat adipisicing sedari.</p>
-                                    </div>
-                                    <div class="col-md-4 margin-bottom-20 padding-left-40">
-                                        <ul class="list-unstyled">
-                                            <li>Client: <strong><a href="#" target="_blank">MockCo INC</a></strong></li>
-                                            <li>Date: <strong><a href="#" target="_blank">11 jan, 2016</a></strong></li>
-                                            <li>Category <strong><a href="#" target="_blank">Web Design</a></strong></li>
-                                            <li>Copyright ©2016, All Rights Reserved</li>
-                                        </ul>
-                                        <a href="#" target="_blank" class="btn btn-primary btn-rounded btn-lg margin-top-20">Launch Project</a>
-                                    </div>
-                                </div> <!-- /.row -->
 
                             </div> <!-- /.inline-popup-inner -->
 
                             <a class="inline-popup-close" href="#"><i class="fas fa-times"></i></a>
-
-                        </div>
-                        <!-- End inline popup content -->
-
+                        </div><!-- Popup content. Class "mfp-hide" is required to make dialog hidden -->
                     </div>
-                    <!-- End portfolio item -->
+                </div><!-- Cross Platform -->
 
-                </div>
-                <!-- End isotope item -->
-                <!-- //////////////////
-                // Begin isotope item
-                /////////////////////// -->
-                <div class="isotope-item graphics wow fadeInUp">
+            </div><!-- Isotope items (real content) -->
 
-                    <!-- Begin portfolio item -->
-                    <div class="portfolio-item-wrap">
-                        <div class="portfolio-item">
-                            <a class="item-link inline-popup-trigger" href="#portfolio-8">
-                                <span class="cover bg-transparent-9-main"></span>
-                                <img class="item-img" src="~/Content/images/portfolio/masonry/portfolio-img-8.jpg" alt="image">
-                                <div class="item-info text-white">
-                                    <h3 class="item-info-title">Identity MockUp vol.3</h3>
-                                    <p class="item-info-text">Graphics</p>
-                                </div>
-                            </a>
-                        </div>
+        </div><!-- Isotope -->
 
-                        <!-- Begin inline popup content. Class "mfp-hide" is required to make dialog hidden -->
-                        <div id="portfolio-8" class="inline-popup mfp-hide">
-                            <div class="inline-popup-inner">
-
-                                <div class="inline-popup-image bg-image" style="background-image: url(/Content/images/portfolio/big/portfolio-img-8.jpg); background-position: 50% 50%;"></div>
-
-                                <div class="row margin-top-40">
-                                    <div class="col-md-8 margin-bottom-20">
-                                        <h2 class="no-margin-top">Portfolio Single Item 8</h2>
-                                        <p>This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of finished, typeset text. Only for show.</p>
-
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquapta. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquipter consequat adipisicing sedari.</p>
-                                    </div>
-                                    <div class="col-md-4 margin-bottom-20 padding-left-40">
-                                        <ul class="list-unstyled">
-                                            <li>Client: <strong><a href="#" target="_blank">MockCo INC</a></strong></li>
-                                            <li>Date: <strong><a href="#" target="_blank">16 jan, 2016</a></strong></li>
-                                            <li>Category <strong><a href="#" target="_blank">Graphics</a></strong></li>
-                                            <li>Copyright ©2016, All Rights Reserved</li>
-                                        </ul>
-                                        <a href="#" target="_blank" class="btn btn-primary btn-rounded btn-lg margin-top-20">Launch Project</a>
-                                    </div>
-                                </div> <!-- /.row -->
-
-                            </div> <!-- /.inline-popup-inner -->
-
-                            <a class="inline-popup-close" href="#"><i class="fas fa-times"></i></a>
-
-                        </div>
-                        <!-- End inline popup content -->
-
-                    </div>
-                    <!-- End portfolio item -->
-
-                </div>
-                <!-- End isotope item -->
-                <!-- //////////////////
-                // Begin isotope item
-                /////////////////////// -->
-                <div class="isotope-item branding wow fadeInUp">
-
-                    <!-- Begin portfolio item -->
-                    <div class="portfolio-item-wrap">
-                        <div class="portfolio-item">
-                            <a class="item-link inline-popup-trigger" href="#portfolio-9">
-                                <span class="cover bg-transparent-9-main"></span>
-                                <img class="item-img" src="~/Content/images/portfolio/masonry/portfolio-img-9.jpg" alt="image">
-                                <div class="item-info text-white">
-                                    <h3 class="item-info-title">Vinyl Record</h3>
-                                    <p class="item-info-text">Branding</p>
-                                </div>
-                            </a>
-                        </div>
-
-                        <!-- Begin inline popup content. Class "mfp-hide" is required to make dialog hidden -->
-                        <div id="portfolio-9" class="inline-popup mfp-hide">
-                            <div class="inline-popup-inner">
-
-                                <div class="inline-popup-image bg-image" style="background-image: url(/Content/images/portfolio/big/portfolio-img-9.jpg); background-position: 50% 50%;"></div>
-
-                                <div class="row margin-top-40">
-                                    <div class="col-md-8 margin-bottom-20">
-                                        <h2 class="no-margin-top">Portfolio Single Item 9</h2>
-                                        <p>This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of finished, typeset text. Only for show.</p>
-
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquapta. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquipter consequat adipisicing sedari.</p>
-                                    </div>
-                                    <div class="col-md-4 margin-bottom-20 padding-left-40">
-                                        <ul class="list-unstyled">
-                                            <li>Client: <strong><a href="#" target="_blank">MockCo INC</a></strong></li>
-                                            <li>Date: <strong><a href="#" target="_blank">18 jan, 2016</a></strong></li>
-                                            <li>Category <strong><a href="#" target="_blank">Branding</a></strong></li>
-                                            <li>Copyright ©2016, All Rights Reserved</li>
-                                        </ul>
-                                        <a href="#" target="_blank" class="btn btn-primary btn-rounded btn-lg margin-top-20">Launch Project</a>
-                                    </div>
-                                </div> <!-- /.row -->
-
-                            </div> <!-- /.inline-popup-inner -->
-
-                            <a class="inline-popup-close" href="#"><i class="fas fa-times"></i></a>
-
-                        </div>
-                        <!-- End inline popup content -->
-
-                    </div>
-                    <!-- End portfolio item -->
-
-                </div>
-                <!-- End isotope item -->
-                <!-- //////////////////
-                // Begin isotope item
-                /////////////////////// -->
-                <div class="isotope-item web-design wow fadeInUp">
-
-                    <!-- Begin portfolio item -->
-                    <div class="portfolio-item-wrap">
-                        <div class="portfolio-item">
-                            <a class="item-link inline-popup-trigger" href="#portfolio-10">
-                                <span class="cover bg-transparent-9-main"></span>
-                                <img class="item-img" src="~/Content/images/portfolio/masonry/portfolio-img-10.jpg" alt="image">
-                                <div class="item-info text-white">
-                                    <h3 class="item-info-title">Shopping Bag</h3>
-                                    <p class="item-info-text">Web Design</p>
-                                </div>
-                            </a>
-                        </div>
-
-                        <!-- Begin inline popup content. Class "mfp-hide" is required to make dialog hidden -->
-                        <div id="portfolio-10" class="inline-popup mfp-hide">
-                            <div class="inline-popup-inner">
-
-                                <div class="inline-popup-image bg-image" style="background-image: url(/Content/images/portfolio/big/portfolio-img-10.jpg); background-position: 50% 50%;"></div>
-
-                                <div class="row margin-top-40">
-                                    <div class="col-md-8 margin-bottom-20">
-                                        <h2 class="no-margin-top">Portfolio Single Item 10</h2>
-                                        <p>This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of finished, typeset text. Only for show.</p>
-
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquapta. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquipter consequat adipisicing sedari.</p>
-                                    </div>
-                                    <div class="col-md-4 margin-bottom-20 padding-left-40">
-                                        <ul class="list-unstyled">
-                                            <li>Client: <strong><a href="#" target="_blank">MockCo INC</a></strong></li>
-                                            <li>Date: <strong><a href="#" target="_blank">29 jan, 2016</a></strong></li>
-                                            <li>Category <strong><a href="#" target="_blank">Web Design</a></strong></li>
-                                            <li>Copyright ©2016, All Rights Reserved</li>
-                                        </ul>
-                                        <a href="#" target="_blank" class="btn btn-primary btn-rounded btn-lg margin-top-20">Launch Project</a>
-                                    </div>
-                                </div> <!-- /.row -->
-
-                            </div> <!-- /.inline-popup-inner -->
-
-                            <a class="inline-popup-close" href="#"><i class="fas fa-times"></i></a>
-
-                        </div>
-                        <!-- End inline popup content -->
-
-                    </div>
-                    <!-- End portfolio item -->
-
-                </div>
-                <!-- End isotope item -->
-
-            </div>
-            <!-- End isotope items wrap -->
-
-        </div>
-        <!-- End isotope -->
-
-        <div class="text-center wow fadeIn" data-wow-delay="0.4s">
+        <div class="text-center wow fadeIn hidden" data-wow-delay="0.4s">
             <a href="#" target="_blank" class="btn btn-default btn-xlg btn-block margin-top-40">View All Portfolio</a>
         </div>
 

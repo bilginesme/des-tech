@@ -3434,7 +3434,7 @@ img.mfp-img {
 .testimonial-item img {
 	display: inline-block !important;
 	float: left;
-	max-width: 100px;
+	max-width: 150px;
 	margin: 0 25px 20px 0;
 }
 .tm-hide-image .testimonial-item img { /* Hiding testimonial image if class "tm-hide-image" is used. */

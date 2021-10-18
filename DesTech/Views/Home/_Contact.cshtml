@@ -10,6 +10,7 @@
 * Use class "bg-image-parallax" to enable background image parallax effect (otherwise use class "bg-image").
 * Use class "bg-pattern" if you use background patterns (example: http://subtlepatterns.com/). Combine with class "bg-image-fixed".
 -->
+
 <section id="section-8" class="contact-section bg-dark angle-right-top bg-image-parallax" style="background-image: url(/Content/images/misc/bg-1.jpg);">
 
     <!-- Element cover
@@ -56,33 +57,39 @@
             <div class="col-md-5 text-gray-2 padding-left-40">
 
                 <div class="contact-info">
-                    <p><i class="fas fa-home"></i> 121 King Street, Melbourne, Australia</p>
-                    <p><i class="fas fa-phone"></i> phone: +123 456 789 00</p>
-                    <p><i class="fas fa-envelope"></i> <a href="mailto:company.email@info.com" target="_blank">company.email@info.com</a></p>
+                    <p><i class="fas fa-home"></i> Adnan Kahveci Cad.  24B/1 Maltepe Istanbul</p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:besme@destech.net" class="text-white" target="_blank">besme@destech.net</a></p>
+                    <p>
+                        <br />
+                        <img src="~/Content/images/contact-us.png" class="img-responsive" style="max-width:350px;display: block; margin-left: auto; margin-right: auto;" />
+                    </p>
                 </div>
 
-                <h5 class="margin-top-40 margin-bottom-20">Follow Us:</h5>
-
-                <!-- Begin social icons -->
-                <ul class="social-icons margin-bottom-20">
-                    <li><a class="btn btn-social-min btn-white-bordered btn-rounded-full btn-lg" href="" target="_blank"><i class="fab fa-facebook"></i></a></li>
-                    <li><a class="btn btn-social-min btn-white-bordered btn-rounded-full btn-lg" href="" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                    <li><a class="btn btn-social-min btn-white-bordered btn-rounded-full btn-lg" href="" target="_blank"><i class="fab fa-google-plus"></i></a></li>
-                    <li><a class="btn btn-social-min btn-white-bordered btn-rounded-full btn-lg" href="" target="_blank"><i class="fab fa-pinterest"></i></a></li>
-                    <li><a class="btn btn-social-min btn-white-bordered btn-rounded-full btn-lg" href="" target="_blank"><i class="fab fa-dribbble"></i></a></li>
-                </ul>
-                <!-- End social icons -->
-
+                <div class="hidden">
+                    <h5 class="margin-top-40 margin-bottom-20">Follow Us:</h5>
+                    <ul class="social-icons margin-bottom-20">
+                        <li><a class="btn btn-social-min btn-white-bordered btn-rounded-full btn-lg" href="" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                        <li><a class="btn btn-social-min btn-white-bordered btn-rounded-full btn-lg" href="" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </div><!-- Social icons HIDDEN now -->
             </div> <!-- /.col -->
 
         </div> <!-- /.row -->
 
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12" id="divMessage">
 
-                <!-- Begin contact form
-                ========================= -->
-                <form id="contact-form" class="margin-top-80 text-white wow fadeIn" data-wow-delay="0.3s">
+                @using (Ajax.BeginForm("_ParContactFormSave", "Home", new { dummyID = 0 },
+               new AjaxOptions
+               {
+                   HttpMethod = "POST",
+                   InsertionMode = InsertionMode.Replace,
+                   UpdateTargetId = "divResult",
+                   LoadingElementId = "",
+                   OnBegin = "$('#divMessage').hide();$('#divResult').hide();",
+                   OnSuccess = "$('#divResult').show();"
+               }, new { @id = "frmContact", @class = "margin-top-80 text-white wow fadeIn" }))
+                {
 
                     <!-- Begin hidden required fields (https://github.com/agragregra/uniMail) -->
                     <input type="hidden" name="project_name" value="yourwebsiteaddress.com"> <!-- Change value to your site name -->
@@ -93,36 +100,51 @@
                     <div class="row">
                         <div class="col-lg-4">
                             <div class="form-group">
-                                <input type="text" class="form-control" name="Name:" placeholder="Your Name" required="">
+                                <input type="text" class="form-control" name="txtName" placeholder="Your Name" required="">
                             </div>
                         </div>
                         <div class="col-lg-4">
                             <div class="form-group">
-                                <input type="email" class="form-control" name="Email:" placeholder="Your Email" required="">
+                                <input type="email" class="form-control" name="txtEmail" placeholder="Your Email" required="">
                             </div>
                         </div>
                         <div class="col-lg-4">
                             <div class="form-group">
-                                <input type="text" class="form-control" name="Subject:" placeholder="Subject" required="">
+                                <input type="text" class="form-control" name="txtSubject" placeholder="Subject" required="">
+
                             </div>
                         </div>
-                    </div>
+                    </div><!-- Name, Email, Subject -->
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="txtCaptcha" placeholder="Enter the text you see on the right side" required="">
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="form-group">
+                                <img id="captchaImage" src="@Url.Action("ShowCaptchaImage", "Home")" class="pull-right img-thumbnail img-rounded" />
+                            </div>
+                        </div>
+                    </div><!-- Capthca -->
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="form-group">
-                                <textarea class="form-control" name="Message:" rows="8" placeholder="Your Message (text only)" required=""></textarea>
+                                <textarea class="form-control" name="txtMessage" rows="8" placeholder="Your Message (text only)" required=""></textarea>
                             </div>
                         </div>
-                    </div>
+                    </div><!-- Message -->
                     <div class="row">
                         <div class="col-lg-12">
                             <button type="submit" class="btn btn-primary btn-rounded btn-block btn-lg">Send Message</button>
                         </div>
-                    </div>
-                </form>
-                <!-- End contact form -->
+                    </div><!-- Button -->
+                }
 
             </div> <!-- /.col-->
+            <div class="col-md-12" id="divResult" hidden>
+                result here
+            </div>
         </div> <!-- /.row -->
     </div> <!-- /.container -->
 

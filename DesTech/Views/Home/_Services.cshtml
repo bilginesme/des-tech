@@ -10,6 +10,7 @@
 * Use class "bg-image-parallax" to enable background image parallax effect (otherwise use class "bg-image").
 * Use class "bg-pattern" if you use background patterns (example: http://subtlepatterns.com/). Combine with class "bg-image-fixed".
 -->
+
 <section id="section-2" class="services-section bg-dark angle-right-top angle-left-bottom bg-image-parallax" style="background-image: url(/Content/images/misc/bg-4.jpg);">
 
     <!-- Element cover
@@ -20,92 +21,135 @@
 
     <div class="container">
         <div class="row">
-
-            <!-- Left column -->
             <div class="col-md-6">
 
                 <!-- Begin heading
-                ===================
-                * Use class "heading-center" or "heading-right" to align heading.
-                * Use class "heading-xs", "heading-sm", "heading-md", "heading-lg" or "heading-xlg" to shange heading size.
-                * Use class "heading-hover" to enable heading hover effect.
-                * Use class "heading-uppercase" to enable uppercase letters.
-                -->
+        ===================
+        * Use class "heading-center" or "heading-right" to align heading.
+        * Use class "heading-xs", "heading-sm", "heading-md", "heading-lg" or "heading-xlg" to shange heading size.
+        * Use class "heading-hover" to enable heading hover effect.
+        * Use class "heading-uppercase" to enable uppercase letters.
+        -->
                 <div class="heading heading-lg text-white heading-hover wow fadeIn" data-wow-delay="0.2s">
                     <span class="heading-title-ghost">Services</span>
                     <h2 class="heading-title">Services</h2>
 
                     <!-- Begin divider
-                    ===================
-                    * Use class "hr-width-1", "hr-width-2" -> up to "hr-width-10" to change divider width.
-                    * Use class "hr-1x", "hr-2x", "hr-3x", "hr-4x" or "hr-5x" to change divider size.
-                    * Use class "hr-dotted", "hr-dashed" or "hr-double" to change divider style.
-                    -->
+    ===================
+    * Use class "hr-width-1", "hr-width-2" -> up to "hr-width-10" to change divider width.
+    * Use class "hr-1x", "hr-2x", "hr-3x", "hr-4x" or "hr-5x" to change divider size.
+    * Use class "hr-dotted", "hr-dashed" or "hr-double" to change divider style.
+    -->
                     <hr class="hr-width-3 hr-5x border-main">
                     <!-- End divider -->
 
                     <p class="heading-tescription lead text-gray-2">
-                        We make software! Our services start from the very birth of a project till the lifecycle ...
+                        We make software! Our one and only service is <b>developing software</b>. Our work starts from the very birth of a project till the end of the software lifecycle.
                     </p>
                     <br>
-                    <a href="#" target="_blank" class="btn btn-white-bordered btn-rounded"><i class="fas fa-external-link-alt"></i> Read More!</a>
+
+                    <div class="row">
+                        <img src="~/Content/images/desktop-work.png" class="img-responsive" style="max-width:350px;display: block; margin-left: auto; margin-right: auto;" />
+                    </div>
+
+                    <div id="modalServices" class="inline-popup mfp-hide">
+                        <div class="inline-popup-inner">
+                            <div class="inline-popup-image bg-image" style="background-image: url(/Content/images/sw-development-lifecycle.png); background-position: 0% 0%; background-size: 100%"></div>
+                            <div class="row margin-top-40">
+                                <div class="col-md-8 margin-bottom-20">
+                                    <h2 class="no-margin-top">Services</h2>
+                                    <p class="info-box-text text-gray">
+                                        We make software! Our one and only service is <b>developing software</b>.
+                                        Our work starts from the very birth of a project till the end of the software lifecycle.
+                                    </p>
+                                    <p class="info-box-text text-gray">
+                                        The first step of a software is modeling a real-world problem into a robust and elegant architecture. This architecture is
+                                        composed of flexible <b>building blocks</b> (classes) and a meaningful <b>data structure</b>.
+                                    </p>
+                                    <p style="margin-top:40px;margin-bottom:40px">
+                                        <img src="~/Content/images/sw-developers-desktop.png" class="img-responsive" alt="Software developer's desk. Not necessarily that tidy though." title="Software developer's desk. Not necessarily that tidy though." style="max-width:500px;display: block; margin-left: auto; margin-right: auto;" />
+                                    </p>
+                                    <p class="info-box-text text-gray">
+                                        Upon a well estabished architecture, we create versatile algorithms that solve the real-world problems. Creating clever
+                                        algorithms is necessary but not sufficient for a robust software.
+                                        The software is a woven fabric, composed of code pieces. We strictly follow universally accepted code standards,
+                                        yielding a code as simple as possible, re-usable, modular, and easily updatable.
+                                    </p>
+                                    <p class="info-box-text text-gray">
+                                        We issue a 1 year <b>free maintainence service</b> at the end of our all projects. All our
+                                        software is delivered as open source, so the clients are free to continue on their own.
+                                        Though we offer a yearly maintainence service that costs 15% of the project cost.
+                                    </p>
+                                </div>
+                                <div class="col-md-4 margin-bottom-20 padding-left-40">
+                                    <h2 class="no-margin-top">SW Lifecycle</h2>
+                                    <p class="info-box-text text-gray">
+                                        A software program is in many ways like a living organism. It starts its life with a mere <b>idea</b>.
+                                        This idea is transformed into an abstract model after requirements analysis.
+                                    </p>
+                                    <p class="info-box-text text-gray">
+                                        At the <b>design</b> step, this abstract model is transformed into a software architecture and software models
+                                        such as classes and database models. The implementation step transforms this model into a real software.
+                                    </p>
+                                    <p class="info-box-text text-gray">
+                                        But this software is only at its infancy. It grows mature along the <b>testing</b> and <b>evolution</b> processes.
+                                    </p>
+                                    <p class="info-box-text text-gray">
+                                        And in fact, as long as the software is alive, software development process never ends. The process goes on with
+                                        additions, modifications, adaptations, optimizations i.e. the maintainence step.
+                                    </p>
+                                </div>
+                            </div> <!-- /.row -->
+                        </div> <!-- /.inline-popup-inner -->
+                        <a class="inline-popup-close" href="#"><i class="fas fa-times"></i></a>
+                    </div><!-- Popup content. Class "mfp-hide" is required to make dialog hidden -->
                 </div>
                 <!-- End heading -->
 
-            </div> <!-- /.col -->
-            <!-- Right column -->
+            </div> <!-- Left column -->
             <div class="col-md-6">
-
                 <div class="row">
                     <div class="col-md-12">
-                        <!-- Begin info box-4 -->
                         <div class="info-box info-box-4 info-box-white wow fadeIn">
-                            <span class="info-box-icon rounded-icon bg-main text-white"><i class="fas fa-paint-brush"></i></span>
+                            <span class="info-box-icon rounded-icon bg-main text-white"><i class="far fa-drafting-compass"></i></span>
                             <div class="info-box-info">
                                 <h4 class="info-box-title">Designing the Architecture</h4>
                                 <p class="info-box-text text-gray-2">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit minim veniam ut enim.
+                                    The first step is modeling a real-world problem into a robust and elegant architecture.
                                 </p>
                             </div>
                         </div>
-                        <!-- End info box-4 -->
-                    </div> <!-- /.col -->
-
+                    </div> <!-- Designing the Architecture -->
                     <div class="col-md-12">
-                        <!-- Begin info box-4 -->
                         <div class="info-box info-box-4 info-box-white wow fadeIn" data-wow-delay="0.2s">
                             <span class="info-box-icon rounded-icon bg-main text-white"><i class="fas fa-code"></i></span>
                             <div class="info-box-info">
-                                <h4 class="info-box-title">Developing</h4>
+                                <h4 class="info-box-title">Developing Software</h4>
                                 <p class="info-box-text text-gray-2">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit minim veniam ut enim.
+                                    Upon a well estabished architecture, we create versatile algorithms that solve the real-world problems. 
                                 </p>
                             </div>
                         </div>
-                        <!-- End info box-4 -->
-                    </div> <!-- /.col -->
-
+                    </div> <!-- Developing Software -->
                     <div class="col-md-12">
-                        <!-- Begin info box-4 -->
                         <div class="info-box info-box-4 info-box-white wow fadeIn" data-wow-delay="0.4s">
-                            <span class="info-box-icon rounded-icon bg-main text-white"><i class="fas fa-globe"></i></span>
+                            <span class="info-box-icon rounded-icon bg-main text-white"><i class="fas fa-stethoscope"></i></span>
                             <div class="info-box-info">
                                 <h4 class="info-box-title">Maintainence</h4>
                                 <p class="info-box-text text-gray-2">
                                     We issue a 1 year <b>free maintainence service</b> at the end of our all projects. All our
-                                    software is delivered as open source, so the clients are free to continue on their own.
-                                    Though we offer a yearly maintainence service that costs 15% of the project cost.
+                                    software is delivered as open source.
                                 </p>
                             </div>
                         </div>
-                        <!-- End info box-4 -->
-                    </div> <!-- /.col -->
-
-                </div><!-- /.row -->
-            </div> <!-- /.col -->
-
-        </div><!-- /.row -->
-    </div> <!-- /.container -->
+                    </div> <!-- Maintainence -->
+                    <div class="col-md-12">
+                        <a href="#modalServices" class="btn btn-white-bordered btn-rounded inline-popup-trigger pull-right"><i class="fas fa-external-link-alt"></i> Read More!</a>
+                    </div>
+                </div>
+            </div> <!-- Right column -->
+        </div>
+    </div>
 
 </section>
-<!-- End SERVICES section -->
+ 
