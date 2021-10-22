@@ -250,6 +250,7 @@
     <Content Include="Content\images\clients\new-holland-logo.png" />
     <Content Include="Content\images\clients\opet-logo.png" />
     <Content Include="Content\images\clients\ram-capital-logo.png" />
+    <Content Include="Content\images\contact-us.png" />
     <Content Include="Content\images\desktop-work.png" />
     <Content Include="Content\images\header-shadow.png" />
     <Content Include="Content\images\intro\intro-bg-2.jpg" />
@@ -316,6 +317,11 @@
     <Content Include="Content\images\portfolio\big\portfolio-img-9.jpg" />
     <Content Include="Content\images\portfolio\big\ramcapital-01.jpg" />
     <Content Include="Content\images\portfolio\big\sumatra.png" />
+    <Content Include="Content\images\portfolio\masonry\cross-platform-alt.png" />
+    <Content Include="Content\images\portfolio\masonry\cross-platform.png" />
+    <Content Include="Content\images\portfolio\masonry\electron-large.png" />
+    <Content Include="Content\images\portfolio\masonry\electron-logo.png" />
+    <Content Include="Content\images\portfolio\masonry\game-development-640x800.png" />
     <Content Include="Content\images\portfolio\masonry\mobile-development.png" />
     <Content Include="Content\images\portfolio\masonry\portfolio-img-1.jpg" />
     <Content Include="Content\images\portfolio\masonry\portfolio-img-10.jpg" />
@@ -327,6 +333,7 @@
     <Content Include="Content\images\portfolio\masonry\portfolio-img-7.jpg" />
     <Content Include="Content\images\portfolio\masonry\portfolio-img-8.jpg" />
     <Content Include="Content\images\portfolio\masonry\portfolio-img-9.jpg" />
+    <Content Include="Content\images\portfolio\masonry\web-development.jpg" />
     <Content Include="Content\images\portfolio\portfolio-img-1.jpg" />
     <Content Include="Content\images\portfolio\portfolio-img-10.jpg" />
     <Content Include="Content\images\portfolio\portfolio-img-2.jpg" />
@@ -353,6 +360,7 @@
     <Content Include="Content\images\portfolio\v.2\portfolio-img-6.jpg" />
     <Content Include="Content\images\portfolio\v.2\portfolio-img-7.jpg" />
     <Content Include="Content\images\portfolio\v.2\portfolio-img-8.jpg" />
+    <Content Include="Content\images\portfolio\web-development.jpg" />
     <Content Include="Content\images\sw-developers-desktop.png" />
     <Content Include="Content\images\sw-development-lifecycle.png" />
     <Content Include="Content\images\team\bilgin-esme.jpg" />
