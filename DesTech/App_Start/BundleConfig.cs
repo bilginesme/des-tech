@@ -33,7 +33,6 @@ namespace DesTech
                         "~/Scripts/modernizr-*"));
             
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                "~/Content/fontawesome/css/all.css",
                 "~/Content/bootstrap.min.css",
                 "~/Content/animate.min.css",
                 "~/Content/magnific-popup.css",
