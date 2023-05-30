@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Net.Mail;
+using System.Net;
 
 namespace DesTech
 {
@@ -12,7 +13,13 @@ namespace DesTech
         {
             try
             {
-                SmtpClient smtpClient = new SmtpClient();
+                SmtpClient smtpClient = new SmtpClient()
+                {
+                    EnableSsl = true,
+                    DeliveryMethod = SmtpDeliveryMethod.Network,
+                    UseDefaultCredentials = false,
+                    Credentials = new NetworkCredential("besme@esme.org", "D@phne(285]lj")
+                };
                 MailMessage mail = new MailMessage();
 
                 foreach (string str in addresses)
